@@ -1,5 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-./install-zsh.sh
-./install-config.sh
-./install-tools.sh
+BASEDIR=$(dirname "$0")
+$BASEDIR/install-zsh.sh
+$BASEDIR/install-config.sh
+$BASEDIR/install-tools.sh
